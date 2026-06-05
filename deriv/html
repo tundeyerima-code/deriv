@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Broker Bonus Offer</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    background:url('your-background-image.jpg') center center/cover no-repeat;
+    position:relative;
+}
+
+/* Dark Overlay */
+body::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.55);
+}
+
+/* Crypto Ticker */
+.ticker-wrap{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:#111;
+    color:#00ff88;
+    overflow:hidden;
+    z-index:999;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.ticker{
+    display:inline-block;
+    white-space:nowrap;
+    padding:15px 0;
+    animation:ticker 20s linear infinite;
+    font-weight:bold;
+    font-size:16px;
+}
+
+@keyframes ticker{
+    0%{
+        transform:translateX(100%);
+    }
+    100%{
+        transform:translateX(-100%);
+    }
+}
+
+/* Center Content */
+.container{
+    position:relative;
+    z-index:2;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    padding:20px;
+}
+
+.signup-btn{
+    background:linear-gradient(135deg,#ff4d00,#ff8c00);
+    color:#fff;
+    border:none;
+    padding:20px 50px;
+    font-size:28px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    text-decoration:none;
+    text-transform:uppercase;
+
+    animation:
+        pulse 1s infinite,
+        beep 0.7s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.08);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
+
+@keyframes beep{
+    0%{
+        box-shadow:0 0 5px #ff4d00;
+    }
+    50%{
+        box-shadow:0 0 30px #ff8c00;
+    }
+    100%{
+        box-shadow:0 0 5px #ff4d00;
+    }
+}
+
+.bonus-text{
+    margin-top:25px;
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+    text-shadow:0 0 10px rgba(0,0,0,0.8);
+    max-width:700px;
+}
+</style>
+
+</head>
+<body>
+
+<div class="ticker-wrap">
+    <div class="ticker">
+        ₿ Bitcoin: $108,245 ▲ 2.4% &nbsp;&nbsp;&nbsp;
+        ETH Ethereum: $5,921 ▲ 1.8% &nbsp;&nbsp;&nbsp;
+        SOL Solana: $243 ▲ 3.7% &nbsp;&nbsp;&nbsp;
+        XRP: $3.42 ▲ 4.1% &nbsp;&nbsp;&nbsp;
+        BNB: $1,135 ▲ 1.5% &nbsp;&nbsp;&nbsp;
+        DOGE: $0.68 ▲ 2.9% &nbsp;&nbsp;&nbsp;
+        ₿ Bitcoin: $108,245 ▲ 2.4% &nbsp;&nbsp;&nbsp;
+        ETH Ethereum: $5,921 ▲ 1.8%
+    </div>
+</div>
+
+<div class="container">
+
+    <a href="YOUR_AFFILIATE_LINK_HERE" class="signup-btn">
+        Sign Up Now
+    </a>
+
+    <div class="bonus-text">
+        Get <strong>$100 Bonus</strong> When You Deposit
+        <strong>$100 Or More</strong>
+    </div>
+
+</div>
+
+</body>
+</html>
